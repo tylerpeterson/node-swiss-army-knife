@@ -6,8 +6,8 @@ function allPermutations(choices, sequenceLength) {
   var permutations = choices.slice();
 
   while (permutations.length != Math.pow(choices.length, sequenceLength)) {
-    permutations = choices.reduce(function (wip2, currentReplacement) {
-      return wip2.concat(permutations.map(function (currentStem) {
+    permutations = choices.reduce(function (resultList, currentReplacement) {
+      return resultList.concat(permutations.map(function (currentStem) {
         return currentReplacement + currentStem;
       }));
     }, []);
