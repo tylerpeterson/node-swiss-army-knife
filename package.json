@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tylerpeterson/node-swiss-army-knife/issues"
   },
-  "homepage": "https://github.com/tylerpeterson/node-swiss-army-knife"
+  "homepage": "https://github.com/tylerpeterson/node-swiss-army-knife",
+  "dependencies": {
+    "chai": "~1.9.1"
+  }
 }

@@ -1,5 +1,5 @@
 function allPermutations(choices, sequenceLength) {
-  if (sequenceLength === 0) {
+  if (!(sequenceLength > 0)) {
     return [];
   }
 
