@@ -5,4 +5,9 @@ describe('allPermutations', function () {
   it('should return empty list when called with nothing', function () {
     expect(allPermutations()).to.be.an('array');
   });
+
+  it('should do a defensive copy', function () {
+    var options = ['a', 'b'];
+    expect(allPermutations(options, 1)).to.not.equal(options);
+  });
 });
