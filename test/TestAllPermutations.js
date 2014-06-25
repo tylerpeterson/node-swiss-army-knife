@@ -10,4 +10,9 @@ describe('allPermutations', function () {
     var options = ['a', 'b'];
     expect(allPermutations(options, 1)).to.not.equal(options);
   });
+
+  it('should return the original options for length 1', function () {
+    var options = ['a', 'b'];
+    expect(allPermutations(options, 1)).to.eql(options);
+  });
 });
