@@ -16,8 +16,22 @@ describe('allPermutations', function () {
     expect(allPermutations(options, 1)).to.eql(options);
   });
 
-  it('should return all permutations', function () {
+  it('should return all permutations of 2', function () {
     var options = ['a', 'b'];
     expect(allPermutations(options, 2)).to.eql(['aa', 'ab', 'ba', 'bb']);
   });
+
+  it('should return all permutations of 3', function () {
+    var options = ['a', 'b'];
+    expect(allPermutations(options, 3)).to.eql([
+        'aaa',
+        'aab',
+        'aba',
+        'abb',
+        'baa',
+        'bab',
+        'bba',
+        'bbb'
+      ]);    
+  })
 });
