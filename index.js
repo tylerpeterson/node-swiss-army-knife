@@ -17,6 +17,15 @@ function allPermutations(choices, sequenceLength) {
   return permutations;
 }
 
+function permuterFactory(choices) {
+  return function (input) {
+    return choices.map(function (cur) {
+      return input.concat(cur);
+    });
+  };
+}
+
 module.exports = {
-  allPermutations: allPermutations
+  allPermutations: allPermutations,
+  permuterFactory: permuterFactory
 };
