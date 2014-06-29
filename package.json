@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tylerpeterson/node-swiss-army-knife",
   "dependencies": {
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "debug": "~1.0.2"
   }
 }

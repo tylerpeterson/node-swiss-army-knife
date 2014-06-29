@@ -9,4 +9,11 @@ describe('permuter', function () {
         ['x', 'b']
       ]);
   });
+  it('should work with reduce', function () {
+    var permuter = permuterFactory(['a', 'b']);
+    expect([['x']].reduce(permuter, [])).to.eql([
+        ['x', 'a'],
+        ['x', 'b']
+      ]);
+  });
 });
