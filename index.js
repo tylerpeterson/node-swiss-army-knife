@@ -1,8 +1,6 @@
 function allPermutations(choices, sequenceLength) {
-  if (!(sequenceLength > 0)) {
-    return [];
-  }
-  
+  if (!(sequenceLength > 0)) return [];
+
   var i;
   var permutations = choices.slice();
 
