@@ -16,4 +16,18 @@ describe('permuter', function () {
         ['x', 'b']
       ]);
   });
+  it('can be used to compute swedish ancestor names', function () {
+    var parents = ['mor', 'far'];
+    var permuter = permuterFactory(parents);
+
+    expect([['']]
+      .reduce(permuter, [])
+      .reduce(permuter, [])
+      .map(function (cur) {return cur.join('');})).to.eql([
+        'mormor',
+        'morfar',
+        'farmor',
+        'farfar'
+      ]);
+  });
 });
